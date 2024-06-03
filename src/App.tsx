@@ -1,20 +1,18 @@
 import { useState } from "react";
-import Main from "./homepage/main";
+import Home from "./homepage/home";
 
 function App() {
-  const [signedIn, setSignedIn] = useState<boolean>(true);
+  const [signedIn, setSignedIn] = useState<boolean>(false);
 
   return (
     <>
-      <div className="bg-slate-500">
-        <Main
-          signedIn={signedIn}
-          setSignedIn={setSignedIn}
-          username=""
-          password=""
-          displayName=""
-        />
-      </div>
+      <Home
+        signedIn={signedIn}
+        setSignedIn={setSignedIn}
+        username=""
+        password=""
+        displayName=""
+      />
     </>
   );
 }
