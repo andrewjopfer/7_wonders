@@ -1,15 +1,12 @@
 import { useState } from "react";
 import Main from "./homepage/main";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
 
 function App() {
-  const [signedIn, setSignedIn] = useState<boolean>(false);
+  const [signedIn, setSignedIn] = useState<boolean>(true);
 
   return (
     <>
-      <div>
+      <div className="bg-slate-500">
         <Main
           signedIn={signedIn}
           setSignedIn={setSignedIn}

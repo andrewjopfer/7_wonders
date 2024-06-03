@@ -13,7 +13,7 @@ export default function LoginModal(props: loginModalProps) {
   return (
     <>
       <div
-        className="relative z-10"
+        className={"relative z-10" + (props.signedIn ? "" : "hidden")}
         aria-labelledby="modal-title"
         role="dialog"
         aria-modal="true"
@@ -31,7 +31,7 @@ export default function LoginModal(props: loginModalProps) {
                       className="text-base font-semibold leading-6 text-gray-900"
                       id="modal-title"
                     >
-                      Deactivate account
+                      Login
                     </h3>
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">
