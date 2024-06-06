@@ -27,7 +27,9 @@ export default function Home(props: loginModalProps) {
               </button>
             </td>
             <td className="flex items-center justify-center">
-              <button className="bg-indigo-500">Join Game</button>
+              <button className="bg-indigo-500 animate-bounce">
+                Join Game
+              </button>
             </td>
             <td className="flex items-center justify-center">
               <button>Options</button>
