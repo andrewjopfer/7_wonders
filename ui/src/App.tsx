@@ -9,8 +9,8 @@ function App() {
       <Home
         signedIn={signedIn}
         setSignedIn={setSignedIn}
-        username=""
-        password=""
+        username="Test"
+        password="other"
         displayName=""
       />
     </>
