@@ -11,9 +11,7 @@ def get_accounts():
     users = Users.query.all()
     json_users = list(map(lambda x: x.to_json(), users))
 
-    # return jsonify({"users": json_users})
-
-    return test
+    return jsonify({"users": json_users})
 
 if __name__ == "__main__":
     with app.app_context():
